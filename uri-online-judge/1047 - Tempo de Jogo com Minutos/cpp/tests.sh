@@ -17,6 +17,4 @@ test03() {
 build
 
 printGreen "> Running tests..."
-#  set -x
 . ../../utils/shunit2.sh
-#  set +x
