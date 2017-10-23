@@ -1,1 +1,1 @@
-https://www.urionlinejudge.com.br/judge/pt/problems/view/1049
+https://www.urionlinejudge.com.br/repository/UOJ_1049.html

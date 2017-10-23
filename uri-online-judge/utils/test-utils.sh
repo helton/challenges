@@ -10,19 +10,11 @@ printYellow() { echo $yellow$1$reset; }
 newline() { echo; }
 
 runWithInput() {
-  echo $1 | ./app
-}
-
-runWithInputFile() {
-  cat tests/$1 | ./app
+  echo "$1" | ./app
 }
 
 checkAnswer() {
-  assertEquals "$( runWithInput $1 )" "$2"
-}
-
-checkAnswerViaInputFile() {
-  assertEquals "$( runWithInputFile $1 )" "$2"
+  assertEquals "$2" "$( runWithInput "$1" )"
 }
 
 build() {
